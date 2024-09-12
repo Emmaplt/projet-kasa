@@ -13,29 +13,16 @@ function App() {
   return (
     <Router>
       <div className="App">
- {/*        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <nav>
-            <ul>
-              <li>
-                <Link to="/" className="App-link">Accueil</Link>
-              </li>
-              <li>
-                <Link to="/a-propos" className="App-link">À propos</Link>
-              </li>
-            </ul>
-          </nav>
-        </header> */}
         <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/logement" element={<Logement />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="*" element={<Page404 />} />
+          </Routes>
+        </main>
         <Footer />
-
-        {/* Routes définies ici */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/logement" element={<Logement />} />
-          <Route path="/a-propos" element={<APropos />} />
-          <Route path="*" element={<Page404 />} />
-        </Routes>
       </div>
     </Router>
   );

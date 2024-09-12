@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import './_footer.scss';
 
-// Définition du composant Footer
 function Footer() {
   return (
     <footer className="footer">
@@ -14,5 +13,4 @@ function Footer() {
   );
 }
 
-// Exportation du composant Footer
 export default Footer;
