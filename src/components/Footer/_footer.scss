@@ -1,0 +1,25 @@
+@import '../color';
+@import '../_style';
+
+.footer{
+    background-color: $tertiary-color;
+    height: 209px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+}
+
+.footer-content{
+    color: $text-color-tertiary;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: $primary-font;
+}
+
+.footer-logo{
+    width: 122px;
+}
+
