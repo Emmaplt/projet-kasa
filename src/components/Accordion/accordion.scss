@@ -1,0 +1,52 @@
+@import '../_color';
+@import '../_style';
+
+.about-page {
+  margin-bottom: 30px;
+}
+
+.accordion {
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1023px;
+  padding: 10px;
+  
+  &.open {
+    .accordion-header {
+      background-color: $primary-color;
+    }
+  }
+
+  font-family: $primary-font;
+  color: $text-color-secondary;
+
+  .accordion-header {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: $text-color-tertiary;
+    font-weight: 700;
+    font-size: 20px;
+    height: 54px;
+    border-radius: 5px;
+    padding: 0 20px;
+
+    .accordion-icon {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  .accordion-content {
+    padding: 5px 0 5px 30px;
+    background-color: $secondary-color;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+  }
+}

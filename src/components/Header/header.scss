@@ -1,0 +1,39 @@
+@import '../_color';
+@import '../_style';
+
+// Styles pour le header
+.App-header {
+    background-color: $background-color;
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;    
+
+.App-logo {
+    height: 60px;
+}
+
+nav {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      li {
+        .App-link {
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 24px;
+          padding-bottom: 2px;
+          margin-left: 50px;
+          color: $text-color-secondary;
+          font-family: $primary-font;
+          }
+          .App-link:hover {
+            border-bottom: 2px solid $text-color-secondary;
+          }
+        }
+      }
+    }
+}

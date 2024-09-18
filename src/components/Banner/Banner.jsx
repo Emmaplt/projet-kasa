@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import './_banner.scss';
+import './banner.scss';
 
-const Banner = () => {
+const Banner = ({ className, children }) => {
   return (
-    <div className="banner">
+    <div className={className}>
         <div className="overlay"></div> {/* Élément pour la superposition */}
-      <h1>Chez vous, partout et ailleurs</h1>
+      {children}
     </div>
   );
 };

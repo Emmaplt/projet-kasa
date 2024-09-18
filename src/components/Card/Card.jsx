@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import data from '../../data/logements.json';
-import './_card.scss';
+import dataLogements from '../../data/logements.json';
+import './card.scss';
 
 const Card = ({ title, cover }) => {
     return (

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.svg';
-import './_footer.scss';
+import logo from '../../images/logo-blanc.svg';
+import './footer.scss';
 
 function Footer() {
   return (
