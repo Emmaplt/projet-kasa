@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './banner.scss';
 
 const Banner = ({ className, children }) => {

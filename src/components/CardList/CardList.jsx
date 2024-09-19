@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import dataLogements from '../../data/logements.json';
 import Card from '../Card/Card';
 import './cardlist.scss';
