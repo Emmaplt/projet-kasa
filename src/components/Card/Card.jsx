@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
-import dataLogements from '../../data/logements.json';
 import './card.scss';
 
-const Card = ({ title, cover }) => {
+const Card = ({ id, title, cover }) => {
     return (
       <div className="card">
-        <img src={cover} alt={`Image de ${title}`} className="card-image" />
+        <Link to={`/logement/${id}`} className="card-link">
+        <img src={cover} alt={`Visuel de ${title}`} className="card-image" />
         <div className="card-title-overlay">
           <h3 className="card-title">{title}</h3>
         </div>
+        </Link>
       </div>
     );
   };
