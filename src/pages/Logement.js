@@ -1,29 +1,47 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import dataLogements from '../data/logements.json';
+import Carrousel from '../components/Carrousel/Carrousel';
+import TitleLocation from '../components/TitleLocation/TitleLocation';
+import Tags from '../components/Tags/Tags';
+import HostInfo from '../components/HostInfo/HostInfo';
+import Rating from '../components/Rating/Rating';
+import Accordion from '../components/Accordion/Accordion';
+import '../style/logement.scss';
 
 const Logement = () => {
-  const { id } = useParams(); // Récupère l'ID du logement à partir de l'URL
-  const navigate = useNavigate(); // Utilisé pour rediriger
-  const logement = dataLogements.find((logement) => logement.id === id); // Trouve le logement correspondant
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const logement = dataLogements.find((logement) => logement.id === id);
 
-  // Rediriger vers la page 404 si le logement n'est pas trouvé
   useEffect(() => {
     if (!logement) {
-      navigate('/404'); // Redirige vers la page 404
+      navigate('/404');
     }
   }, [logement, navigate]);
 
   if (!logement) {
-    return null; // Retourne null si le logement n'est pas encore trouvé (avant redirection)
+    return null;
   }
 
   return (
     <div className="logement-details">
-      <h1>{logement.title}</h1>
-      <img src={logement.cover} alt={logement.title} />
-      <p>{logement.description}</p>
-      {/* Afficher d'autres informations comme les équipements, etc. */}
+       <Carrousel pictures={logement.pictures} />
+
+       <div className="logement-header">
+        <TitleLocation title={logement.title} location={logement.location} />
+        <HostInfo host={logement.host} />
+      </div>
+
+      <div className="logement-tags-rating">
+        <Tags tags={logement.tags} />
+        <Rating rating={parseInt(logement.rating)} />
+      </div>
+
+      <div className="logement-accordions">
+        <Accordion title="Description" content={logement.description} />
+        <Accordion title="Équipements" content={logement.equipments.join(', ')} />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,19 @@
+@import '../_color';
+@import '../_style';
+
+.host-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .host-info span {
+    color: $text-color-primary;
+    font-size: 18px;
+  }
+  
+  .host-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }

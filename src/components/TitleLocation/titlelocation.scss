@@ -1,0 +1,18 @@
+@import '../_color';
+@import '../_style';
+
+.title-location h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: $text-color-primary;
+    margin: 0;
+  }
+  
+  .title-location p {
+    font-size: 18px;
+    color: $text-color-secondary;
+  }
+
+.title-location p, h1 {
+  font-family: $primary-font;
+}

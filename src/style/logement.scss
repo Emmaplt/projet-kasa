@@ -1,0 +1,23 @@
+.logement-details {
+    margin: 20px 60px;
+  }
+  
+  .logement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .logement-tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .logement-accordions {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+  }

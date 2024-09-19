@@ -1,0 +1,17 @@
+@import '../_color';
+@import '../_style';
+
+.rating {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .filled-star {
+    color: $primary-color;
+    font-size: 24px;
+  }
+  
+  .empty-star {
+    color: $secondary-color;
+    font-size: 24px;
+  }

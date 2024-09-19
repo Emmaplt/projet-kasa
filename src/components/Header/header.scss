@@ -5,9 +5,10 @@
 .App-header {
     background-color: $background-color;
     margin: 60px;
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;    
+    flex-direction: row;
 
 .App-logo {
     height: 60px;
@@ -24,7 +25,7 @@ nav {
         .App-link {
           text-decoration: none;
           font-weight: 500;
-          font-size: 24px;
+          font-size: 22px;
           padding-bottom: 2px;
           margin-left: 50px;
           color: $text-color-secondary;
