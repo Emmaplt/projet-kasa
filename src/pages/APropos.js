@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner/Banner';
-import Accordion from '../components/Accordion/Accordion'; // Correction : utiliser "Accordion" au lieu de "Button"
+import Accordion from '../components/Accordion/Accordion';
 
 const About = () => {
   return (

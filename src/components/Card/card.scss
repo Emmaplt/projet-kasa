@@ -3,10 +3,10 @@
 
 .card {
     position:relative;
-    border-radius: 15px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
-    overflow: hidden; /* Cache les débordements */
-    margin: 20px; /* Marge autour de la carte */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
     height: 300px;
     width: 300px;
 }
@@ -24,7 +24,7 @@
 .card-title {
     margin: 0;
     font-size: 18px;
-    line-height: 25.67px; /* Taille du titre */
+    line-height: 25.67px;
 }
 
 .card-title-overlay {
