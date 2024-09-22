@@ -1,19 +1,19 @@
-@import '../../style/_color';
-@import '../../style/_style';
+@import "../../style/_color";
+@import "../../style/_style";
 
 .App-header {
-    background-color: $background-color;
-    margin: 60px;
-    max-width: 1240px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  background-color: $background-color;
+  margin: 60px;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 
-.App-logo {
+  .App-logo {
     height: 60px;
-}
+  }
 
-nav {
+  nav {
     ul {
       list-style: none;
       display: flex;
@@ -29,11 +29,11 @@ nav {
           margin-left: 50px;
           color: $text-color-secondary;
           font-family: $primary-font;
-          }
-          .App-link:hover {
-            border-bottom: 2px solid $text-color-secondary;
-          }
+        }
+        .App-link:hover {
+          border-bottom: 2px solid $text-color-secondary;
         }
       }
     }
+  }
 }
