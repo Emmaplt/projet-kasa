@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import dataLogements from '../data/logements.json';
 import Carrousel from '../components/Carrousel/Carrousel';
 import TitleLocation from '../components/TitleLocation/TitleLocation';
@@ -7,21 +7,15 @@ import Tags from '../components/Tags/Tags';
 import HostInfo from '../components/HostInfo/HostInfo';
 import Rating from '../components/Rating/Rating';
 import Accordion from '../components/Accordion/Accordion';
+import Page404 from './Page404';
 import '../style/logement.scss';
 
 const Logement = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   const logement = dataLogements.find((logement) => logement.id === id);
 
-  useEffect(() => {
-    if (!logement) {
-      navigate('/404');
-    }
-  }, [logement, navigate]);
-
   if (!logement) {
-    return null;
+    return <Page404 />;
   }
 
   return (

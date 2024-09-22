@@ -4,7 +4,7 @@ import './cards.scss';
 
 const Cards = () => {
   return (
-    <div className="cards">
+    <div className="cardlist">
       {dataLogements.map((logement) => (
         <Card
           key={logement.id}

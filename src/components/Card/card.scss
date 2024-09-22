@@ -1,5 +1,6 @@
 @import '../../style/_color';
 @import '../../style/_style';
+
 .card {
     position:relative;
     border-radius: 15px;
@@ -8,6 +9,11 @@
     margin: 20px;
     height: 300px;
     width: 300px;
+}
+
+.card-link {
+    text-decoration: none; /* Supprime la décoration de lien par défaut */
+    color: inherit; /* Hérite de la couleur du parent */
 }
 
 .card-image {
