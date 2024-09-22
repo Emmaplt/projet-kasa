@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner/Banner';
-import CardList from '../components/CardList/CardList';
+import CardList from '../components/Cards/Cards';
 
 function Home() {
   return (

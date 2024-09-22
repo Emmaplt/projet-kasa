@@ -1,13 +1,12 @@
 import React from 'react';
+import Tag from '../Tag/Tag';
 import './tags.scss';
 
 const Tags = ({ tags }) => {
   return (
     <div className="tags">
       {tags.map((tag, index) => (
-        <span key={index} className="tag">
-          {tag}
-        </span>
+        <Tag key={index} tag={tag} />
       ))}
     </div>
   );

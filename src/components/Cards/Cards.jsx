@@ -1,10 +1,10 @@
 import dataLogements from '../../data/logements.json';
 import Card from '../Card/Card';
-import './cardlist.scss';
+import './cards.scss';
 
-const CardList = () => {
+const Cards = () => {
   return (
-    <div className="card-list">
+    <div className="cards">
       {dataLogements.map((logement) => (
         <Card
           key={logement.id}
@@ -17,4 +17,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default Cards;
