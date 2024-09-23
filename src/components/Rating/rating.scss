@@ -14,3 +14,17 @@
     color: $secondary-color;
     font-size: 1.5rem;
   }
+
+  @media (max-width: 768px) {
+    .rating {
+      gap: 3px; /* Réduit l'espace entre les étoiles sur mobile */
+    }
+  
+    .filled-star {
+      font-size: 20px; /* Réduit la taille des étoiles pleines sur mobile */
+    }
+  
+    .empty-star {
+      font-size: 1.25rem; /* Réduit la taille des étoiles vides sur mobile */
+    }
+  }

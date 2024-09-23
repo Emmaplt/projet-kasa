@@ -9,3 +9,11 @@
   font-weight: 700;
   font-size: 0.875rem;
 }
+
+@media (max-width: 768px) {
+  .tag {
+    padding: 5px 20px;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+}

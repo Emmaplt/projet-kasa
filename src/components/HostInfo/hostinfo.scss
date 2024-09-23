@@ -16,3 +16,19 @@
     height: 64px;
     border-radius: 50%;
   }
+
+  @media (max-width: 768px) {
+    .host-info {
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .host-info span {
+      font-size: 1rem;
+    }
+  
+    .host-image {
+      width: 48px;
+      height: 48px;
+    }
+  }
