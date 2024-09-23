@@ -14,7 +14,7 @@
   color: $text-color-tertiary;
   margin-top: 50px;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: $primary-font;
 }
 
@@ -22,4 +22,19 @@
   width: 122px;
   filter: invert(100%) sepia(3%) saturate(11%) hue-rotate(333deg)
     brightness(102%) contrast(103%);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 70px;
+  }
+
+  .footer-content {
+    font-size: 0.875rem;
+    margin-top: 0;
+  }
+
+  .footer-logo {
+    height: 35px;
+  }
 }
