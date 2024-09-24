@@ -19,24 +19,34 @@ const Logement = () => {
   }
 
   return (
-    <div className="logement-details">
-       <Carrousel pictures={logement.pictures} />
+<div className="logement-details">
+  <Carrousel pictures={logement.pictures} />
 
-       <div className="logement-header">
+  <div className="logement-info">
+    <div className="logement-title-tags">
+      <div className="logement-title">
         <TitleLocation title={logement.title} location={logement.location} />
-        <HostInfo host={logement.host} />
       </div>
-
-      <div className="logement-tags-rating">
+      <div className="logement-tags">
         <Tags tags={logement.tags} />
-        <Rating rating={parseInt(logement.rating)} />
-      </div>
-
-      <div className="logement-accordions">
-        <Accordion title="Description" content={logement.description} />
-        <Accordion title="Équipements" content={logement.equipments.join(', ')} />
       </div>
     </div>
+
+    <div className="logement-host-rating">
+      <div className="logement-host">
+        <HostInfo host={logement.host} />
+      </div>
+      <div className="logement-rating">
+        <Rating rating={parseInt(logement.rating)} />
+      </div>
+    </div>
+  </div>
+
+  <div className="logement-accordions">
+    <Accordion title="Description" content={logement.description} />
+    <Accordion title="Équipements" content={logement.equipments.join(', ')} />
+  </div>
+</div>
   );
 };
 
