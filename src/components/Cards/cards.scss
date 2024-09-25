@@ -1,17 +1,17 @@
 .cardlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    background: #F6F6F6;
-    border-radius: 15px;
-    margin: 60px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f6f6f6;
+  border-radius: 15px;
+  margin: 60px;
+}
 
-  @media (max-width: 768px) {
-    .cardlist {
-      background: none;
-      padding:0;
-      margin:0;
-    }
+@media (max-width: 768px) {
+  .cardlist {
+    background: none;
+    padding: 0;
+    margin: 0;
   }
+}

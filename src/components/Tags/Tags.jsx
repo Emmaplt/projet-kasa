@@ -1,6 +1,6 @@
-import React from 'react';
-import Tag from '../Tag/Tag';
-import './tags.scss';
+import React from "react";
+import Tag from "../Tag/Tag";
+import "./tags.scss";
 
 const Tags = ({ tags }) => {
   return (

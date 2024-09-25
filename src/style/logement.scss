@@ -44,7 +44,6 @@
 }
 
 @media (max-width: 768px) {
-
   .logement-info {
     flex-direction: column;
     gap: 10px;
@@ -58,7 +57,8 @@
     width: 90%;
   }
 
-  .logement-title, .logement-tags {
+  .logement-title,
+  .logement-tags {
     width: 90%;
     text-align: left;
   }
@@ -70,7 +70,8 @@
     width: 90%;
   }
 
-  .logement-host, .logement-rating {
+  .logement-host,
+  .logement-rating {
     width: auto;
   }
 

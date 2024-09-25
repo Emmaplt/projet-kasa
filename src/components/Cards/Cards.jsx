@@ -1,6 +1,6 @@
-import dataLogements from '../../data/logements.json';
-import Card from '../Card/Card';
-import './cards.scss';
+import dataLogements from "../../data/logements.json";
+import Card from "../Card/Card";
+import "./cards.scss";
 
 const Cards = () => {
   return (

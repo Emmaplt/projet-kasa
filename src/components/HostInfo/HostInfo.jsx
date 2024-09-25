@@ -1,5 +1,5 @@
-import React from 'react';
-import './hostinfo.scss';
+import React from "react";
+import "./hostinfo.scss";
 
 const HostInfo = ({ host }) => {
   return (

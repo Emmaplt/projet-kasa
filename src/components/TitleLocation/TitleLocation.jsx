@@ -1,5 +1,5 @@
-import React from 'react';
-import './titlelocation.scss';
+import React from "react";
+import "./titlelocation.scss";
 
 const TitleLocation = ({ title, location }) => {
   return (
