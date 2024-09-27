@@ -24,11 +24,9 @@ const Accordion = ({ title, content }) => {
           </svg>
         </span>
       </div>
-      {isOpen && (
-        <div className="accordion-content">
-          <p>{content}</p>
-        </div>
-      )}
+      <div className="accordion-content">
+        <p>{content}</p>
+      </div>
     </div>
   );
 };

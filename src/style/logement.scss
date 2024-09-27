@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 60px;
+  margin: 0px auto;
 }
 
 .logement-details > .carrousel {
@@ -44,30 +43,38 @@
 }
 
 @media (max-width: 768px) {
+  .logement-details {
+    padding: 20px;
+  }
+
   .logement-info {
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 0px;
   }
 
   .logement-title-tags {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    width: 90%;
+    width: 100%;
   }
 
   .logement-title,
   .logement-tags {
-    width: 90%;
+    width: 100%;
     text-align: left;
+  }
+
+  .logement-title p{
+    margin: 0;
+    padding-top: 5px;
   }
 
   .logement-host-rating {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
   }
 
   .logement-host,
@@ -77,6 +84,8 @@
 
   .logement-accordions {
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
   }
 }
